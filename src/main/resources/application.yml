@@ -1,0 +1,37 @@
+environment: dev
+spring:
+  application:
+    name: customer-data-management
+  datasource:
+    url: jdbc:h2:mem:mydb
+    # in production Credential  will  be read from secure place like credhub
+    username: DevUser
+    password: ^Yffy90(%%gh44
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+  banner:
+    location: banner.txt
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  threads:
+    virtual:
+      enabled: true
+  logging:
+    level:
+      ROOT: DEBUG
+# in production Credential  will  be read from secure place like credhub
+basicauth:
+  userName: Non-Personal-Account
+  password: Ka=0Z9L4f8:R
+
+server:
+  servlet:
+    context-path: /v1/customermanagement
+  port: 8081
+
+

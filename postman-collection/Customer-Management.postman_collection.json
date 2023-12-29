@@ -1,0 +1,194 @@
+{
+  "info": {
+    "_postman_id": "35779904-3f89-4218-8b98-510da52987de",
+    "name": "Customer-Management",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5267014",
+    "_collection_link": "https://martian-flare-930658.postman.co/workspace/Team-Workspace~534d4bab-ee29-481a-8628-b490215c1196/collection/5267014-35779904-3f89-4218-8b98-510da52987de?action=share&source=collection_link&creator=5267014"
+  },
+  "item": [
+    {
+      "name": "Get by parameters",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Basic Tm9uLVBlcnNvbmFsLUFjY291bnQ6S2E9MFo5TDRmODpS",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8081/v1/customermanagement/customers?customerFirstName=jack&customerLastName=ryan",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "v1",
+            "customermanagement",
+            "customers"
+          ],
+          "query": [
+            {
+              "key": "customerFirstName",
+              "value": "jack"
+            },
+            {
+              "key": "customerLastName",
+              "value": "ryan"
+            }
+          ]
+        }
+      },
+      "response": [
+      ]
+    },
+    {
+      "name": "Create-Customer",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Basic Tm9uLVBlcnNvbmFsLUFjY291bnQ6S2E9MFo5TDRmODpS",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"customerFirstName\": \"jack\",\n    \"customerLastName\": \"ryan\",\n    \"age\": 1,\n    \"customerEmailAddress\": \"sandeep.pandey1@gmail.com\",\n    \"customerAddress\": {\n        \"houseNumber\": \"223\",\n        \"street\": \"Potassium nitrate\",\n        \"city\": \"ufo\",\n        \"country\": \"Nl\",\n        \"postalCode\": \"1234la\"\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8081/v1/customermanagement/customers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "v1",
+            "customermanagement",
+            "customers"
+          ]
+        }
+      },
+      "response": [
+      ]
+    },
+    {
+      "name": "update-customer",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Basic Tm9uLVBlcnNvbmFsLUFjY291bnQ6S2E9MFo5TDRmODpS",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n        \"customerId\": \"43737d8a-278a-4a84-b38b-a5194fceb487\",\n        \"customerFirstName\": \"jack\",\n        \"customerLastName\": \"ryan\",\n        \"age\": 1,\n        \"customerEmailAddress\": \"jackryan-upadtemail@gmail.com\",\n        \"customerAddress\": {\n            \"houseNumber\": \"12a\",\n            \"street\": \"Potassium nitrate1\",\n            \"city\": \"ufo\",\n            \"country\": \"Nl\",\n            \"postalCode\": \"1234la\"\n        }\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8081/v1/customermanagement/customers/{placeholder customer id here}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "v1",
+            "customermanagement",
+            "customers",
+            "{placeholder customer id here}"
+          ]
+        }
+      },
+      "response": [
+      ]
+    },
+    {
+      "name": "get-customers",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Basic Tm9uLVBlcnNvbmFsLUFjY291bnQ6S2E9MFo5TDRmODpS",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8081/v1/customermanagement/customers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "v1",
+            "customermanagement",
+            "customers"
+          ]
+        }
+      },
+      "response": [
+      ]
+    }
+  ]
+}
