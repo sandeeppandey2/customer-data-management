@@ -1,0 +1,29 @@
+environment: integration
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    # in production Credential  will  be read from secure place like credhub
+    username: TestUser
+    password: 234567DFGYH&$56
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  threads:
+    virtual:
+      enabled: true
+
+# in production Credential  will  be read from secure place like credhub
+basicauth:
+  userName: Non-Personal-Account-Integration
+  password: Ka=0Z9L4f8:3
+
+server:
+  servlet:
+    context-path: /v1/customermanagement
+  port: 8081
