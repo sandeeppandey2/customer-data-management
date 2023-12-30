@@ -8,13 +8,14 @@
         <version>3.2.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.customers</groupId>
+    <groupId>com.crm.customer</groupId>
     <artifactId>customer-data-management</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>customer-data-management</name>
     <description>Application to manage customer data</description>
     <properties>
         <java.version>21</java.version>
+        <swagger-version>2.3.0</swagger-version>
     </properties>
     <dependencies>
         <dependency>
@@ -50,7 +51,7 @@
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-            <version>2.3.0</version>
+            <version>${swagger-version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -58,7 +59,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
     <build>
         <finalName>customer-data-management</finalName>
         <plugins>
@@ -76,4 +76,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
