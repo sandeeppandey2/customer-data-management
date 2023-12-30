@@ -1,6 +1,6 @@
 # Customer Data Management Application
 
-This Application exposes Rest services to manage customer resources.
+This is http basic auth protected Spring-boot Application which exposes Rest services to manage customer resources.
 
 ## Tech stack
 
@@ -18,7 +18,31 @@ This Application exposes Rest services to manage customer resources.
           application will start at port 8081
         * Alternatively import or clone in Intellij and run main class
 
-## Note: Java 21 and latest maven is required.
+## How to run Application using Docker image
+
+1.Pull docker image as below
+
+```
+docker pull sandeep745/customer-data-management:latest
+
+```
+
+2.Run docker command
+
+   ```
+docker run -p8081:8081 customer-data-management:latest
+
+```
+
+3.Access application swagger file using below url
+
+```
+http://localhost:8081/v1/customermanagement/api-docs.html
+```
+
+4.Provide basic auth details in Authorize field on swagger page and execute api calls.
+
+## Note: Java 21 and latest maven is required .
 
 ## Request Details
 
@@ -186,4 +210,8 @@ curl --location --request PUT 'http://localhost:8081/v1/customermanagement/custo
     }'
 ```
 
-## Note: For easy testing and validation basic auth is shared in both postman and curl command if that doesnot work then refer yaml file for credential.
+## Note:
+
+** For easy testing and validation basic auth is shared in both postman and curl command if that doesnot work then refer
+yaml file for credential and select basic auth while calling Api.
+** basic http application so certificates not required to call api.
