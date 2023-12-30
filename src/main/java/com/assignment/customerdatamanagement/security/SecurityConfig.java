@@ -34,7 +34,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.POST, "/customers").authenticated()
                         .requestMatchers(HttpMethod.PUT, "/customers/{customerId}").authenticated()
                         .requestMatchers(HttpMethod.GET, "/customers/**").authenticated()
-                        .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll()
+                        .requestMatchers("/swagger-ui/**","/api-docs.html","/api-docs/**").permitAll()
                         .anyRequest().denyAll())
                 .httpBasic(httpSecurityHttpBasicConfigurer -> httpSecurityHttpBasicConfigurer
                         .realmName("basic"))

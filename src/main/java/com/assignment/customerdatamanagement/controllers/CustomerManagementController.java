@@ -23,11 +23,11 @@ import java.util.Optional;
 import java.util.UUID;
 
 @RestController
-@Validated
 @AllArgsConstructor
-@Slf4j
 @RequestMapping("/customers")
 @SecurityRequirement(name = "Basic Auth")
+@Slf4j
+@Validated
 public class CustomerManagementController {
 
     private final CustomerManagementService customerManagementService;
