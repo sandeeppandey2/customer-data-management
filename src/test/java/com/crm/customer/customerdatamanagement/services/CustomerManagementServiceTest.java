@@ -26,7 +26,6 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 @DisplayName("Junit for service class")
 class CustomerManagementServiceTest {
-
     @InjectMocks
     private CustomerManagementService classUnderTest;
 

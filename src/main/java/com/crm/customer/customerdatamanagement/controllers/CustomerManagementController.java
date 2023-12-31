@@ -65,4 +65,3 @@ public class CustomerManagementController {
         return ResponseEntity.ok(customerManagementService.updateCustomer(customer, customerId));
     }
 }
-

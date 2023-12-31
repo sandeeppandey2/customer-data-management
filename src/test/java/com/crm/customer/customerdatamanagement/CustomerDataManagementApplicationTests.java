@@ -7,7 +7,6 @@ import org.springframework.context.ApplicationContext;
 
 @SpringBootTest
 class CustomerDataManagementApplicationTests {
-
     @Test
     void contextLoads(ApplicationContext applicationContext) {
         Assertions.assertNotNull(applicationContext);

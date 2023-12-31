@@ -30,7 +30,6 @@ import java.util.UUID;
 @Builder
 @Table(name = "customer")
 public class Customer {
-
     @Id
     @GeneratedValue
     @Column(name = "customer_id")
@@ -66,6 +65,5 @@ public class Customer {
     @UpdateTimestamp
     @Column(name = "updated_time")
     private LocalDateTime updatedDateTime;
-
 }
 

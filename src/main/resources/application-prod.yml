@@ -1,0 +1,13 @@
+environment: production
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    # in production Credential  will  be read from secure place like vault
+    username: DevUser
+    password: ^Yffy90(%%gh44
+    driverClassName: org.h2.Driver
+
+# in production Credential  will  be read from secure place like vault
+basicauth:
+  userName: Non-Personal-Account
+  password: Ka=0Z9L4f8:R
