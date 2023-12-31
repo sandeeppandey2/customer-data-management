@@ -15,7 +15,6 @@ import java.util.UUID;
 @Service
 @AllArgsConstructor
 public class CustomerManagementService {
-
     private CustomerRepository customerRepository;
 
     public Customer createCustomer(Customer customer) {

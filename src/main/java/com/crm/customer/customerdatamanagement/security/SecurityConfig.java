@@ -18,7 +18,6 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
-
     @Value("${basicauth.userName}")
     private String basicUserName;
     @Value("${basicauth.password}")
@@ -26,7 +25,7 @@ public class SecurityConfig {
 
     @SneakyThrows
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain filterChain(HttpSecurity http) {
         return http
                 .cors(Customizer.withDefaults())
                 .csrf(AbstractHttpConfigurer::disable)

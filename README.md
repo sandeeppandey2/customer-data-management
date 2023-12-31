@@ -14,7 +14,7 @@ This is http basic auth protected Spring-boot Application which exposes Rest ser
 
         * Download or clone from github repository
         * Open Command Prompt and Change directory (cd) to folder containing pom.xml
-        * use command `**mvn clean install**` to build project and then use command `mvn spring-boot:run` your
+        * use command **mvn clean install** to build project and then use command mvn **spring-boot:run** your
           application will start at port 8081
         * Alternatively import or clone in Intellij and run main class
 

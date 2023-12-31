@@ -28,7 +28,6 @@ import java.util.UUID;
 @ActiveProfiles("integration")
 @DisplayName("Integration test for customer data management")
 class CustomerDataManagementIT {
-
     @Autowired
     private TestRestTemplate restTemplate;
     @Value("${basic.userName}")
