@@ -49,6 +49,7 @@ http://localhost:8081/v1/customermanagement/api-docs.html
         * Attached is postman collection under postman-collection directory download file and import collection in postman 
           incase you dont want to use it please refer below curl command.
 
+
 1. Create/Add Customer
    ** sample request
 
